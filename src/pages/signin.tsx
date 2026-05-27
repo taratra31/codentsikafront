@@ -5,7 +5,7 @@ import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { ArrowLeft, Code2, ShieldCheck, AlertCircle, X } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function SignIn() {
   const [lang, setLang] = useState<"fr" | "en">("fr");
