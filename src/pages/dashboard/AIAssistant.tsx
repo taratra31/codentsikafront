@@ -38,7 +38,7 @@ type Conversation = {
   updated_at: string;
 };
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 type ChatBlock =
   | { type: "text"; content: string }
